@@ -1,0 +1,23 @@
+# User APi Docker compose
+
+user-api:
+  build: .
+  links:
+    - database
+  environment:
+    - PG_HOST="192.168.99.100"
+    - PG_PORT="5432"
+    - PG_DB="users"
+    - PG_USER="joao"
+    - PG_PWD="da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  command: ls
+
+database:
+  image: postgres
+  expose:
+    - "5432"
+  environment:
+    - POSTGRES_USER="joao"
+    - POSTGRES_PASSWORD="da39a3ee5e6b4b0d3255bfef95601890afd80709"
+    - POSTGRES_DB="users"
+
