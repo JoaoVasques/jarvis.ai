@@ -1,8 +1,9 @@
 FROM clojure
-MAINTAINER Joao Vazao Vasques <joao.l.v.vasques@gmail.com>
+MAINTAINER Joao Vazao Vasques joao.l.v.vasques@gmail.com
 
-ENV API_DIR user-api-dir
-RUN mkdir $API_DIR
-WORKDIR $API_DIR
-    
-ADD . $API_DIR
+#ADD target/uberjar/user-api.jar /user-api/app.jar
+ADD . /users-api/
+WORKDIR /users-api/
+EXPOSE 3000 7000
+
+#CMD ["java", "-jar", "/user-api/app.jar"]
