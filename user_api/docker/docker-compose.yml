@@ -1,0 +1,10 @@
+db:
+  image: postgres
+  container_name: user_api_db
+  expose:
+    - "5432"
+  ports:
+    - "5432:5432"
+  env_file:
+    - env_vars.env
+
