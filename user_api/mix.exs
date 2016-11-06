@@ -3,51 +3,51 @@ defmodule UserApi.Mixfile do
 
   def project do
     [app: :user_api,
-     version: "0.0.1",
-     elixir: "~> 1.2",
-     elixirc_paths: elixirc_paths(Mix.env),
-     compilers: [:phoenix, :gettext] ++ Mix.compilers,
+     version: "0.1.0",
+     elixir: "~> 1.3",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
-     aliases: aliases(),
+     aliases: aliases,
      deps: deps()]
   end
 
-  # Configuration for the OTP application.
+  # Configuration for the OTP application
   #
-  # Type `mix help compile.app` for more information.
+  # Type "mix help compile.app" for more information
   def application do
-    [mod: {UserApi, []},
-     applications: [:phoenix, :phoenix_pubsub, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :postgrex]]
+    [
+      applications: [:logger, :maru, :ecto, :postgrex],
+      mod: {UserApi,[]}
+    ]
   end
 
-  # Specifies which paths to compile per environment.
-  defp elixirc_paths(:test), do: ["lib", "web", "test/support"]
-  defp elixirc_paths(_),     do: ["lib", "web"]
-
-  # Specifies your project dependencies.
+  # Dependencies can be Hex packages:
   #
-  # Type `mix help deps` for examples and options.
+  #   {:mydep, "~> 0.3.0"}
+  #
+  # Or git/path repositories:
+  #
+  #   {:mydep, git: "https://github.com/elixir-lang/mydep.git", tag: "0.1.0"}
+  #
+  # Type "mix help deps" for more examples and options
   defp deps do
-    [{:phoenix, "~> 1.2.1"},
-     {:phoenix_pubsub, "~> 1.0"},
-     {:phoenix_ecto, "~> 3.0"},
-     {:maru, "~> 0.10"},
-     {:postgrex, ">= 0.0.0"},
-     {:gettext, "~> 0.11"},
-     {:cowboy, "~> 1.0"}]
+    [
+      {:poison, "~> 2.0"}, #due to ecto 2.0 requires it
+      {:maru, "~> 0.10"},
+      {:postgrex, ">= 0.0.0"},
+      {:ecto, "~> 2.0.0"}
+    ]
   end
 
-  # Aliases are shortcuts or tasks specific to the current project.
-  # For example, to create, migrate and run the seeds file at once:
-  #
-  #     $ mix ecto.setup
-  #
-  # See the documentation for `Mix` for more info on aliases.
   defp aliases do
-    ["ecto.setup": ["ecto.create", "ecto.migrate", "run priv/repo/seeds.exs"],
-     "ecto.reset": ["ecto.drop", "ecto.setup"],
-     "test": ["ecto.create --quiet", "ecto.migrate", "test"]]
+    [
+      "ecto.setup": [
+        "ecto.drop", "ecto.create",  "ecto.load", "ecto.migrate", "test"
+      ],
+      "test": [
+        "ecto.setup"
+      ]
+    ]
   end
 end
+
