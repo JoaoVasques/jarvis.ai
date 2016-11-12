@@ -1,27 +1,46 @@
 # This file is responsible for configuring your application
 # and its dependencies with the aid of the Mix.Config module.
-#
-# This configuration file is loaded before any dependency and
-# is restricted to this project.
 use Mix.Config
 
-# General application configuration
-config :user_api,
-  ecto_repos: [UserApi.Repo]
+# This configuration is loaded before any dependency and is restricted
+# to this project. If another project depends on this project, this
+# file won't be loaded nor affect the parent project. For this reason,
+# if you want to provide default values for your application for
+# 3rd-party users, it should be done in your "mix.exs" file.
 
-# Configures the endpoint
-config :user_api, UserApi.Endpoint,
-  url: [host: "localhost"],
-  secret_key_base: "86CL6J/3z5F465a6kOgK+CVgr8j4gU/fjKF5JYetyWD+Mnuc/x8c1sut55kNd3Gl",
-  render_errors: [view: UserApi.ErrorView, accepts: ~w(json)],
-  pubsub: [name: UserApi.PubSub,
-           adapter: Phoenix.PubSub.PG2]
+# You can configure for your application as:
+#
+#     config :user_api, key: :value
+#
+# And access this configuration in your application as:
+#
+#     Application.get_env(:user_api, :key)
+#
+# Or configure a 3rd-party app:
+#
+#     config :logger, level: :info
+#
 
-# Configures Elixir's Logger
-config :logger, :console,
-  format: "$time $metadata[$level] $message\n",
-  metadata: [:request_id]
+# It is also possible to import configuration files, relative to this
+# directory. For example, you can emulate configuration per environment
+# by uncommenting the line below and defining dev.exs, test.exs and such.
+# Configuration from the imported file will override the ones defined
+# here (which is why it is important to import them last).
+#
+#     import_config "#{Mix.env}.exs"
 
-# Import environment specific config. This must remain at the bottom
-# of this file so it overrides the configuration defined above.
-import_config "#{Mix.env}.exs"
+config :maru, UserApi.API,
+  versioning: [
+    using: :path
+  ],
+  http: [port: 8880]
+
+ config :user_api, ecto_repos: [UserApi.Repo]
+  
+ config :user_api, UserApi.Repo,
+    adapter: Ecto.Adapters.Postgres,
+    database: "user_api",
+    username: "user_api",
+    password: "pwd",
+    hostname: "127.0.0.1",
+    port: "5432"
