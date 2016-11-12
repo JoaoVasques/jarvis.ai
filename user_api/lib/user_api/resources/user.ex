@@ -8,9 +8,9 @@ defmodule Resource.User do
   namespace :user do
     desc "get all users"
     get do
-      query = from user in UserModel, select: (%{ id: user.id, first_name: user.first_name, last_name: user.last_name })
-      users = Repo.all(query) 
-      |> List.wrap
+      users = Repo.all(UserModel)
+      |> Poison.encode!
+      |> JSON.decode! 
       json(conn, users)
     end
 
@@ -27,7 +27,8 @@ defmodule Resource.User do
                         oauth_token: params[:oauth_token]}
 
       case Repo.insert(user) do
-        {:ok, u} -> conn |> text(u.id)
+        {:ok, u} -> 
+          conn |> text(u.id)
         {:error, _} ->
           conn
           |> put_status(500)
@@ -38,7 +39,26 @@ defmodule Resource.User do
     route_param :id do 
       desc "get user information" 
       get do
-        text(conn, "TODO")
+        case Ecto.UUID.cast(params[:id]) do
+          {:ok, id} -> json(conn, Repo.get_by(UserModel, id: id) |> Poison.encode! |> JSON.decode!)
+          {:error, _} ->
+            conn
+            |> put_status(400)
+            |> text("badly formated ID")
+        end
+      end
+
+      desc "deletes a user"
+      delete do
+        user = Repo.get_by(UserModel, id: params[:id])
+        case Repo.delete user do
+          {:ok, _} -> text(conn, "")
+          {:error, changeset} ->
+            #TODO log error
+            conn
+            |> put_status(500)
+            |> text("Error while deleting user")
+        end
       end
     end
   end

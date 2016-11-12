@@ -35,7 +35,8 @@ defmodule UserApi.Mixfile do
       {:poison, "~> 2.0"}, #due to ecto 2.0 requires it
       {:maru, "~> 0.10"},
       {:postgrex, ">= 0.0.0"},
-      {:ecto, "~> 2.0.0"}
+      {:ecto, "~> 2.0.0"},
+      {:json, "~> 1.0"}
     ]
   end
 
