@@ -8,3 +8,19 @@ db:
   env_file:
     - env_vars.env
 
+run:
+  build: .
+  links:
+    - db:user_db
+  container_name: "user_api"
+  command: bash -c "mix ecto.create && mix ecto.migrate && mix run --no-halt"
+  expose:
+    - "8880"
+  ports:
+    - "8880:8880"
+  environment:
+    - USER_DATABASE_ADDRR=user_db
+    - USER_DATABASE_PORT=5432
+  env_file:
+    - env_vars.env
+

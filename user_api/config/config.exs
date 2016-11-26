@@ -38,9 +38,10 @@ config :maru, UserApi.API,
  config :user_api, ecto_repos: [UserApi.Repo]
   
  config :user_api, UserApi.Repo,
-    adapter: Ecto.Adapters.Postgres,
-    database: "user_api",
-    username: "user_api",
-    password: "pwd",
-    hostname: "127.0.0.1",
-    port: "5432"
+   adapter: Ecto.Adapters.Postgres,
+   database: System.get_env("POSTGRES_DB"),
+   username: System.get_env("POSTGRES_USER"),
+   password: System.get_env("POSTGRES_PASSWORD"),
+   hostname: System.get_env("USER_DATABASE_ADDRR"),
+   port: System.get_env("USER_DATABASE_PORT")
+
