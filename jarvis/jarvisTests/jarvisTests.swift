@@ -2,7 +2,7 @@
 //  jarvisTests.swift
 //  jarvisTests
 //
-//  Created by Joao Luis Vazao Vasques on 27/02/16.
+//  Created by Joao Luis Vazao Vasques on 05/11/2016.
 //  Copyright © 2016 xyz.joaovasques. All rights reserved.
 //
 
@@ -28,14 +28,9 @@ class jarvisTests: XCTestCase {
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measureBlock {
+        self.measure {
             // Put the code you want to measure the time of here.
         }
-    }
-    
-    func testIntegrationInitiation() {
-        let fitbitIntegration = Integration(name: "Fitbit", photo: UIImage(named: "Fitbit")!, selected: false)
-        XCTAssertNotNil(fitbitIntegration)
     }
     
 }
