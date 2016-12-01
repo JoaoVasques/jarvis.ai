@@ -5,11 +5,12 @@ defmodule Resource.User do
   alias Interactors.CreateUserInteractor
   alias Interactors.FindUserInteractor
   alias Interactors.DeleteUserInteractor
+  alias Interactors.FetchAllUsersInteractor
   
   namespace :user do
     desc "get all users"
     get do
-      users = Repo.all(UserModel)
+      users = FetchAllUsersInteractor.call
       |> Poison.encode!
       |> JSON.decode! 
       json(conn, users)
