@@ -14,7 +14,7 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var TwitterLogin: UIButton!
 
-    private let createUserInteractor = CreateUserInteractor(userGateway: UserGateway(endpoint: "USER API ENDPOINT"))
+    private let createUserInteractor = CreateUserInteractor(userGateway: UserGateway(endpoint: "http://192.168.1.65:8880/v1"))
     private let saveUserInteractor = SaveUserInteractor(gateway: UserInternalGateway.sharedInstance)
     private let findUserInteractor = FindUserInteractor(gateway: UserInternalGateway.sharedInstance)
 
@@ -42,8 +42,8 @@ class LoginViewController: UIViewController {
 
     private func goToHome(userId: String) -> Void {
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let homeVc: UIViewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as UIViewController
-        self.present(homeVc, animated: true, completion: nil)
+        let destinationViewController: UITabBarController = storyboard.instantiateViewController(withIdentifier: "MainTabBarController") as! UITabBarController
+        self.present(destinationViewController, animated: true, completion: nil)
     }
 
     @IBAction func OnTwitterLogin(_ sender: Any, forEvent event: UIEvent) {

@@ -19,22 +19,23 @@
 		CF645BA61DE1EC6C00338A54 /* CreateUserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF645BA41DE1EC6C00338A54 /* CreateUserInteractor.swift */; };
 		CF645BA81DE1FCA700338A54 /* UserGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF645BA71DE1FCA700338A54 /* UserGateway.swift */; };
 		CF645BA91DE1FCA700338A54 /* UserGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF645BA71DE1FCA700338A54 /* UserGateway.swift */; };
-		CF645BB11DE20D5200338A54 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CF645BAD1DE20D5200338A54 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CF645BB31DE20D5200338A54 /* OAuthSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CF645BAF1DE20D5200338A54 /* OAuthSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CF645BB51DE20D5700338A54 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF645BAD1DE20D5200338A54 /* Alamofire.framework */; };
-		CF645BB71DE20D5700338A54 /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF645BAF1DE20D5200338A54 /* OAuthSwift.framework */; };
-		CF645BBB1DE2118E00338A54 /* BrightFutures.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CF645BB91DE2118E00338A54 /* BrightFutures.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CF645BBC1DE2118E00338A54 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CF645BBA1DE2118E00338A54 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CF645BBD1DE2119100338A54 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF645BB91DE2118E00338A54 /* BrightFutures.framework */; };
-		CF645BBE1DE2119100338A54 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF645BBA1DE2118E00338A54 /* Result.framework */; };
-		CF645BC01DE2287F00338A54 /* XCGLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CF645BBF1DE2287F00338A54 /* XCGLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CF645BC11DE2288400338A54 /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF645BBF1DE2287F00338A54 /* XCGLogger.framework */; };
+		CF75BF001DF2147C00961849 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF0316761DCE577500A66108 /* Alamofire.framework */; };
+		CF75BF011DF2147C00961849 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFEA3B241DF214120040C497 /* BrightFutures.framework */; };
+		CF75BF021DF2147C00961849 /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF0316771DCE577500A66108 /* OAuthSwift.framework */; };
+		CF75BF031DF2147C00961849 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFEA3B261DF214120040C497 /* Realm.framework */; };
+		CF75BF041DF2147C00961849 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFEA3B281DF214120040C497 /* Result.framework */; };
+		CF75BF051DF2147C00961849 /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFEA3B291DF214120040C497 /* XCGLogger.framework */; };
+		CF75BF061DF21BC600961849 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFEA3B271DF214120040C497 /* RealmSwift.framework */; };
+		CF75BF081DF21BCD00961849 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF75BF071DF21BCD00961849 /* RealmSwift.framework */; };
+		CF75BF091DF21BCD00961849 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CF75BF071DF21BCD00961849 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CF7887A31E0705E400A451E2 /* IntegrationsGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7887A21E0705E400A451E2 /* IntegrationsGateway.swift */; };
+		CF7887A51E07072C00A451E2 /* Integration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7887A41E07072C00A451E2 /* Integration.swift */; };
+		CF7887A81E070E7500A451E2 /* GetIntegrationsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7887A71E070E7500A451E2 /* GetIntegrationsInteractor.swift */; };
+		CF7887A91E070E7500A451E2 /* GetIntegrationsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7887A71E070E7500A451E2 /* GetIntegrationsInteractor.swift */; };
+		CF7A90251DFF796200B9FAB1 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7A90241DFF796200B9FAB1 /* SettingsViewController.swift */; };
+		CF7A90271DFF79A500B9FAB1 /* IntegrationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7A90261DFF79A500B9FAB1 /* IntegrationCell.swift */; };
 		CFDA166D1DE9D41E00F0B733 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA166C1DE9D41E00F0B733 /* User.swift */; };
 		CFDA166E1DE9D41E00F0B733 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA166C1DE9D41E00F0B733 /* User.swift */; };
-		CFDA16711DE9D9C700F0B733 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CFDA166F1DE9D9C700F0B733 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CFDA16721DE9D9C700F0B733 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CFDA16701DE9D9C700F0B733 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CFDA16731DE9D9CB00F0B733 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFDA166F1DE9D9C700F0B733 /* Realm.framework */; };
-		CFDA16741DE9D9CB00F0B733 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFDA16701DE9D9C700F0B733 /* RealmSwift.framework */; };
 		CFDA16761DE9DBDE00F0B733 /* SaveUserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA16751DE9DBDE00F0B733 /* SaveUserInteractor.swift */; };
 		CFDA16771DE9DBDE00F0B733 /* SaveUserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA16751DE9DBDE00F0B733 /* SaveUserInteractor.swift */; };
 		CFEA3AD31DE9E3370040C497 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEA3AD21DE9E3370040C497 /* HomeViewController.swift */; };
@@ -49,6 +50,12 @@
 		CFEA3AE01DEB99830040C497 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEA3ADE1DEB99830040C497 /* FoodViewController.swift */; };
 		CFEA3AE21DEB99900040C497 /* WalkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEA3AE11DEB99900040C497 /* WalkingViewController.swift */; };
 		CFEA3AE31DEB99900040C497 /* WalkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEA3AE11DEB99900040C497 /* WalkingViewController.swift */; };
+		CFEA3B2A1DF214120040C497 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CFEA3B231DF214120040C497 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CFEA3B2B1DF214120040C497 /* BrightFutures.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CFEA3B241DF214120040C497 /* BrightFutures.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CFEA3B2C1DF214120040C497 /* OAuthSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CFEA3B251DF214120040C497 /* OAuthSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CFEA3B2D1DF214120040C497 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CFEA3B261DF214120040C497 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CFEA3B2F1DF214120040C497 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CFEA3B281DF214120040C497 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CFEA3B301DF214120040C497 /* XCGLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CFEA3B291DF214120040C497 /* XCGLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,13 +82,13 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CF645BB11DE20D5200338A54 /* Alamofire.framework in Embed Frameworks */,
-				CF645BB31DE20D5200338A54 /* OAuthSwift.framework in Embed Frameworks */,
-				CF645BBB1DE2118E00338A54 /* BrightFutures.framework in Embed Frameworks */,
-				CF645BBC1DE2118E00338A54 /* Result.framework in Embed Frameworks */,
-				CF645BC01DE2287F00338A54 /* XCGLogger.framework in Embed Frameworks */,
-				CFDA16711DE9D9C700F0B733 /* Realm.framework in Embed Frameworks */,
-				CFDA16721DE9D9C700F0B733 /* RealmSwift.framework in Embed Frameworks */,
+				CFEA3B2A1DF214120040C497 /* Alamofire.framework in Embed Frameworks */,
+				CFEA3B2B1DF214120040C497 /* BrightFutures.framework in Embed Frameworks */,
+				CF75BF091DF21BCD00961849 /* RealmSwift.framework in Embed Frameworks */,
+				CFEA3B2C1DF214120040C497 /* OAuthSwift.framework in Embed Frameworks */,
+				CFEA3B2D1DF214120040C497 /* Realm.framework in Embed Frameworks */,
+				CFEA3B2F1DF214120040C497 /* Result.framework in Embed Frameworks */,
+				CFEA3B301DF214120040C497 /* XCGLogger.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,18 +114,15 @@
 		CF03167A1DCE583800A66108 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../../LoginViewController.swift; sourceTree = "<group>"; };
 		CF0316891DCE609500A66108 /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Alamofire.framework.dSYM; path = Carthage/Build/iOS/Alamofire.framework.dSYM; sourceTree = "<group>"; };
 		CF03168A1DCE609500A66108 /* OAuthSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = OAuthSwift.framework.dSYM; path = Carthage/Build/iOS/OAuthSwift.framework.dSYM; sourceTree = "<group>"; };
-		CF0316911DCE61C200A66108 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
-		CF0316921DCE61C200A66108 /* OAuthSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OAuthSwift.framework; path = Carthage/Build/iOS/OAuthSwift.framework; sourceTree = "<group>"; };
 		CF645BA41DE1EC6C00338A54 /* CreateUserInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUserInteractor.swift; sourceTree = "<group>"; };
 		CF645BA71DE1FCA700338A54 /* UserGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserGateway.swift; sourceTree = "<group>"; };
-		CF645BAD1DE20D5200338A54 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
-		CF645BAF1DE20D5200338A54 /* OAuthSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OAuthSwift.framework; path = Carthage/Build/iOS/OAuthSwift.framework; sourceTree = "<group>"; };
-		CF645BB91DE2118E00338A54 /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/iOS/BrightFutures.framework; sourceTree = "<group>"; };
-		CF645BBA1DE2118E00338A54 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
-		CF645BBF1DE2287F00338A54 /* XCGLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCGLogger.framework; path = Carthage/Build/iOS/XCGLogger.framework; sourceTree = "<group>"; };
+		CF75BF071DF21BCD00961849 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		CF7887A21E0705E400A451E2 /* IntegrationsGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntegrationsGateway.swift; sourceTree = "<group>"; };
+		CF7887A41E07072C00A451E2 /* Integration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Integration.swift; sourceTree = "<group>"; };
+		CF7887A71E070E7500A451E2 /* GetIntegrationsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetIntegrationsInteractor.swift; sourceTree = "<group>"; };
+		CF7A90241DFF796200B9FAB1 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		CF7A90261DFF79A500B9FAB1 /* IntegrationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntegrationCell.swift; sourceTree = "<group>"; };
 		CFDA166C1DE9D41E00F0B733 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		CFDA166F1DE9D9C700F0B733 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
-		CFDA16701DE9D9C700F0B733 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		CFDA16751DE9DBDE00F0B733 /* SaveUserInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveUserInteractor.swift; sourceTree = "<group>"; };
 		CFEA3AD21DE9E3370040C497 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CFEA3AD51DEA637C0040C497 /* UserInternalGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInternalGateway.swift; sourceTree = "<group>"; };
@@ -126,6 +130,13 @@
 		CFEA3ADB1DEB98BA0040C497 /* SleepViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SleepViewController.swift; sourceTree = "<group>"; };
 		CFEA3ADE1DEB99830040C497 /* FoodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
 		CFEA3AE11DEB99900040C497 /* WalkingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkingViewController.swift; sourceTree = "<group>"; };
+		CFEA3B231DF214120040C497 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		CFEA3B241DF214120040C497 /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/iOS/BrightFutures.framework; sourceTree = "<group>"; };
+		CFEA3B251DF214120040C497 /* OAuthSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OAuthSwift.framework; path = Carthage/Build/iOS/OAuthSwift.framework; sourceTree = "<group>"; };
+		CFEA3B261DF214120040C497 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		CFEA3B271DF214120040C497 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		CFEA3B281DF214120040C497 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		CFEA3B291DF214120040C497 /* XCGLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCGLogger.framework; path = Carthage/Build/iOS/XCGLogger.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,13 +144,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFDA16731DE9D9CB00F0B733 /* Realm.framework in Frameworks */,
-				CFDA16741DE9D9CB00F0B733 /* RealmSwift.framework in Frameworks */,
-				CF645BB51DE20D5700338A54 /* Alamofire.framework in Frameworks */,
-				CF645BB71DE20D5700338A54 /* OAuthSwift.framework in Frameworks */,
-				CF645BBD1DE2119100338A54 /* BrightFutures.framework in Frameworks */,
-				CF645BBE1DE2119100338A54 /* Result.framework in Frameworks */,
-				CF645BC11DE2288400338A54 /* XCGLogger.framework in Frameworks */,
+				CF75BF001DF2147C00961849 /* Alamofire.framework in Frameworks */,
+				CF75BF011DF2147C00961849 /* BrightFutures.framework in Frameworks */,
+				CF75BF021DF2147C00961849 /* OAuthSwift.framework in Frameworks */,
+				CF75BF061DF21BC600961849 /* RealmSwift.framework in Frameworks */,
+				CF75BF031DF2147C00961849 /* Realm.framework in Frameworks */,
+				CF75BF041DF2147C00961849 /* Result.framework in Frameworks */,
+				CF75BF081DF21BCD00961849 /* RealmSwift.framework in Frameworks */,
+				CF75BF051DF2147C00961849 /* XCGLogger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,15 +175,14 @@
 		CF03163B1DCE553F00A66108 = {
 			isa = PBXGroup;
 			children = (
-				CFDA166F1DE9D9C700F0B733 /* Realm.framework */,
-				CFDA16701DE9D9C700F0B733 /* RealmSwift.framework */,
-				CF645BBF1DE2287F00338A54 /* XCGLogger.framework */,
-				CF645BB91DE2118E00338A54 /* BrightFutures.framework */,
-				CF645BBA1DE2118E00338A54 /* Result.framework */,
-				CF645BAD1DE20D5200338A54 /* Alamofire.framework */,
-				CF645BAF1DE20D5200338A54 /* OAuthSwift.framework */,
-				CF0316911DCE61C200A66108 /* Alamofire.framework */,
-				CF0316921DCE61C200A66108 /* OAuthSwift.framework */,
+				CF75BF071DF21BCD00961849 /* RealmSwift.framework */,
+				CFEA3B231DF214120040C497 /* Alamofire.framework */,
+				CFEA3B241DF214120040C497 /* BrightFutures.framework */,
+				CFEA3B251DF214120040C497 /* OAuthSwift.framework */,
+				CFEA3B261DF214120040C497 /* Realm.framework */,
+				CFEA3B271DF214120040C497 /* RealmSwift.framework */,
+				CFEA3B281DF214120040C497 /* Result.framework */,
+				CFEA3B291DF214120040C497 /* XCGLogger.framework */,
 				CF0316461DCE553F00A66108 /* jarvis */,
 				CF03165B1DCE554000A66108 /* jarvisTests */,
 				CF0316661DCE554000A66108 /* jarvisUITests */,
@@ -241,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				CFDA166C1DE9D41E00F0B733 /* User.swift */,
+				CF7887A41E07072C00A451E2 /* Integration.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -248,6 +260,7 @@
 		CF645B991DD9216300338A54 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				CFB574051DFDB6DE00059F80 /* Settings */,
 				CF645B9C1DE118F900338A54 /* Health */,
 				CF645B9D1DE118F900338A54 /* Home */,
 				CF645B9E1DE118F900338A54 /* Login */,
@@ -293,6 +306,7 @@
 			isa = PBXGroup;
 			children = (
 				CF645BA71DE1FCA700338A54 /* UserGateway.swift */,
+				CF7887A21E0705E400A451E2 /* IntegrationsGateway.swift */,
 				CFEA3AD51DEA637C0040C497 /* UserInternalGateway.swift */,
 			);
 			path = Gateways;
@@ -301,6 +315,7 @@
 		CF645BA11DE11BD200338A54 /* Interactors */ = {
 			isa = PBXGroup;
 			children = (
+				CF7887A61E070E3A00A451E2 /* Integrations */,
 				CF645BA31DE1EC5600338A54 /* User */,
 			);
 			path = Interactors;
@@ -321,6 +336,23 @@
 				CFEA3AD81DEB799F0040C497 /* FindUserInteractor.swift */,
 			);
 			path = User;
+			sourceTree = "<group>";
+		};
+		CF7887A61E070E3A00A451E2 /* Integrations */ = {
+			isa = PBXGroup;
+			children = (
+				CF7887A71E070E7500A451E2 /* GetIntegrationsInteractor.swift */,
+			);
+			path = Integrations;
+			sourceTree = "<group>";
+		};
+		CFB574051DFDB6DE00059F80 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				CF7A90241DFF796200B9FAB1 /* SettingsViewController.swift */,
+				CF7A90261DFF79A500B9FAB1 /* IntegrationCell.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -464,16 +496,21 @@
 				CF03167B1DCE583800A66108 /* LoginViewController.swift in Sources */,
 				CFEA3AD61DEA637C0040C497 /* UserInternalGateway.swift in Sources */,
 				CFEA3ADC1DEB98BA0040C497 /* SleepViewController.swift in Sources */,
+				CF7887A51E07072C00A451E2 /* Integration.swift in Sources */,
 				CF03164A1DCE554000A66108 /* ViewController.swift in Sources */,
 				CFEA3AE21DEB99900040C497 /* WalkingViewController.swift in Sources */,
 				CFDA166D1DE9D41E00F0B733 /* User.swift in Sources */,
 				CFEA3AD31DE9E3370040C497 /* HomeViewController.swift in Sources */,
 				CF645BA81DE1FCA700338A54 /* UserGateway.swift in Sources */,
 				CF0316481DCE554000A66108 /* AppDelegate.swift in Sources */,
+				CF7A90251DFF796200B9FAB1 /* SettingsViewController.swift in Sources */,
 				CF645BA51DE1EC6C00338A54 /* CreateUserInteractor.swift in Sources */,
+				CF7887A81E070E7500A451E2 /* GetIntegrationsInteractor.swift in Sources */,
 				CFEA3AD91DEB799F0040C497 /* FindUserInteractor.swift in Sources */,
 				CFEA3ADF1DEB99830040C497 /* FoodViewController.swift in Sources */,
+				CF7887A31E0705E400A451E2 /* IntegrationsGateway.swift in Sources */,
 				CFDA16761DE9DBDE00F0B733 /* SaveUserInteractor.swift in Sources */,
+				CF7A90271DFF79A500B9FAB1 /* IntegrationCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +518,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF7887A91E070E7500A451E2 /* GetIntegrationsInteractor.swift in Sources */,
 				CFDA166E1DE9D41E00F0B733 /* User.swift in Sources */,
 				CFEA3AD71DEA637C0040C497 /* UserInternalGateway.swift in Sources */,
 				CF03165D1DCE554000A66108 /* jarvisTests.swift in Sources */,
@@ -556,6 +594,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -606,6 +645,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

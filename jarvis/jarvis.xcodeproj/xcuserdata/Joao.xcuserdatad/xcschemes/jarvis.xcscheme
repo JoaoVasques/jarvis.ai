@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0720"
+   LastUpgradeVersion = "0810"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CF105C731C8239060079FBD9"
+               BlueprintIdentifier = "CF0316431DCE553F00A66108"
                BuildableName = "jarvis.app"
                BlueprintName = "jarvis"
                ReferencedContainer = "container:jarvis.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CF105C871C8239060079FBD9"
+               BlueprintIdentifier = "CF0316571DCE554000A66108"
                BuildableName = "jarvisTests.xctest"
                BlueprintName = "jarvisTests"
                ReferencedContainer = "container:jarvis.xcodeproj">
@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CF105C921C8239060079FBD9"
+               BlueprintIdentifier = "CF0316621DCE554000A66108"
                BuildableName = "jarvisUITests.xctest"
                BlueprintName = "jarvisUITests"
                ReferencedContainer = "container:jarvis.xcodeproj">
@@ -52,7 +52,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CF105C731C8239060079FBD9"
+            BlueprintIdentifier = "CF0316431DCE553F00A66108"
             BuildableName = "jarvis.app"
             BlueprintName = "jarvis"
             ReferencedContainer = "container:jarvis.xcodeproj">
@@ -75,7 +75,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CF105C731C8239060079FBD9"
+            BlueprintIdentifier = "CF0316431DCE553F00A66108"
             BuildableName = "jarvis.app"
             BlueprintName = "jarvis"
             ReferencedContainer = "container:jarvis.xcodeproj">
@@ -94,7 +94,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CF105C731C8239060079FBD9"
+            BlueprintIdentifier = "CF0316431DCE553F00A66108"
             BuildableName = "jarvis.app"
             BlueprintName = "jarvis"
             ReferencedContainer = "container:jarvis.xcodeproj">
