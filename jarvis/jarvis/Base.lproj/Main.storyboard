@@ -161,16 +161,16 @@
         <scene sceneID="IKi-cs-ia3">
             <objects>
                 <tableViewController id="IEw-ex-ema" customClass="SettingsViewController" customModule="jarvis" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="prototypes" style="grouped" sectionIndexMinimumDisplayRowCount="1" rowHeight="80" sectionHeaderHeight="18" sectionFooterHeight="18" id="mPR-3B-FiJ">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="prototypes" style="grouped" sectionIndexMinimumDisplayRowCount="1" rowHeight="78" sectionHeaderHeight="18" sectionFooterHeight="18" id="mPR-3B-FiJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="IntegrationCell" id="ea1-te-CoD" customClass="IntegrationCell" customModule="jarvis" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="56" width="375" height="80"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="IntegrationCell" rowHeight="78" id="ea1-te-CoD" customClass="IntegrationCell" customModule="jarvis" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="56" width="375" height="78"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ea1-te-CoD" id="uAO-JY-86o">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="79"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="78"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L3B-l7-LDi">
@@ -180,6 +180,9 @@
                                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2jN-8v-YX8">
                                             <rect key="frame" x="296" y="24" width="51" height="31"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <connections>
+                                                <action selector="integrationChanged:" destination="ea1-te-CoD" eventType="valueChanged" id="LZ6-Nm-YLd"/>
+                                            </connections>
                                         </switch>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFA-5V-d1S">
                                             <rect key="frame" x="112" y="29" width="143" height="21"/>
@@ -209,6 +212,25 @@
             </objects>
             <point key="canvasLocation" x="3773.5999999999999" y="220.83958020989508"/>
         </scene>
+        <!--Insights-->
+        <scene sceneID="xIo-wt-7gk">
+            <objects>
+                <viewController id="wVG-Bf-4v8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iEs-03-1wU"/>
+                        <viewControllerLayoutGuide type="bottom" id="5WQ-PC-NIH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ctu-Ih-Ud4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Insights" image="insights" selectedImage="insights" id="bPo-r1-zaf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4SC-Mc-O15" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4617" y="221"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="AQ6-Yq-FHI">
             <objects>
@@ -220,6 +242,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="xFv-4Z-w2c" kind="relationship" relationship="viewControllers" id="StU-bg-KEM"/>
+                        <segue destination="wVG-Bf-4v8" kind="relationship" relationship="viewControllers" id="Itl-Lx-GGU"/>
                         <segue destination="IEw-ex-ema" kind="relationship" relationship="viewControllers" id="3rQ-gw-ORQ"/>
                     </connections>
                 </tabBarController>
@@ -252,7 +275,9 @@
         <image name="Login_Twitter" width="560" height="85"/>
         <image name="Sleep Group" width="125" height="125"/>
         <image name="Walk Group" width="125" height="125"/>
-        <image name="home" width="20" height="20"/>
-        <image name="settings" width="20" height="16"/>
+        <image name="home" width="21" height="21"/>
+        <image name="insights" width="19" height="25"/>
+        <image name="settings" width="26" height="26"/>
     </resources>
+    <color key="tintColor" red="0.0086034598872101065" green="0.044443213703453159" blue="0.10447916666666668" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

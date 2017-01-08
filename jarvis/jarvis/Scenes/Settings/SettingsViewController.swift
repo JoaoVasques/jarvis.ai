@@ -18,7 +18,7 @@ class SettingsViewController: UITableViewController {
         super.viewDidLoad()
 
         self.integrations = self.getIntegrationsInteractor.call(user_id: "")
-        
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -50,6 +50,21 @@ class SettingsViewController: UITableViewController {
         cell._name.text = integration.name
         cell._activeSwitch.isOn = integration.isActive
         cell._icon.image = UIImage(named: integration.imageName)
+        
+        switch integration.name {
+        case "Fitbit":
+            cell.integrationInteractor = ActivateFitbitInteractor()
+        case "Facebook":
+            cell.integrationInteractor = ActivateFacebookInteractor()
+        case "Instagram":
+            cell.integrationInteractor = ActivateInstagramInteractor()
+        case "Spotify":
+            cell.integrationInteractor = ActivatesSpotifyInteractor()
+        default:
+            cell.integrationInteractor = ActivateFitbitInteractor()
+            
+        }
+        
         // Configure the cell...
 
         return cell

@@ -27,17 +27,16 @@ class IntegrationsGateway : IntegrationsGatewayProtocol {
     
     func getAllIntegrations(userId: String) -> Array<Integration> {
         let dummyIntegrations = [
-            Integration(name: "Fitbit", isActive: false, imageName: "Fitbit"),
-            Integration(name: "Facebook", isActive: false, imageName: "Facebook"),
-            Integration(name: "Instagram", isActive: false, imageName: "Instagram"),
-            Integration(name: "Twitter", isActive: false, imageName: "Twitter"),
-            Integration(name: "Spotify", isActive: false, imageName: "Spotify"),
-            Integration(name: "Google", isActive: false, imageName: "Google"),
-            Integration(name: "Github", isActive: false, imageName: "Github"),
-            Integration(name: "Paypal", isActive: false, imageName: "PayPal")
-
+            Integration(name: "Fitbit", isActive: false, imageName: "Fitbit", type: IntegrationType.health),
+            Integration(name: "Facebook", isActive: false, imageName: "Facebook", type: IntegrationType.social),
+            //Integration(name: "Instagram", isActive: false, imageName: "Instagram", type: IntegrationType.social),
+            Integration(name: "Twitter", isActive: false, imageName: "Twitter", type: IntegrationType.social),
+            Integration(name: "Spotify", isActive: false, imageName: "Spotify", type: IntegrationType.music),
+            //Integration(name: "Google", isActive: false, imageName: "Google", type: IntegrationType.work),
+            Integration(name: "Github", isActive: false, imageName: "Github", type: IntegrationType.work)//,
+            //Integration(name: "Paypal", isActive: false, imageName: "PayPal", type: IntegrationType.finance)
         ]
-        //TODO
+
         return dummyIntegrations
     }
 }

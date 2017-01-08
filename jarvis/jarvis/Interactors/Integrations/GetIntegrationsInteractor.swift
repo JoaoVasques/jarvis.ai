@@ -21,7 +21,7 @@ class GetIntegrationsInteractor :GetIntegrationsInteractorProtocol {
     init(integrationsGateway: IntegrationsGatewayProtocol) {
         self.integrationsGateway = integrationsGateway
     }
-    
+
     // MARK: Business Logic
     func call(user_id: String) -> Array<Integration> {
         return self.integrationsGateway.getAllIntegrations(userId: user_id)

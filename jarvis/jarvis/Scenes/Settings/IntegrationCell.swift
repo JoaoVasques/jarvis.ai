@@ -14,6 +14,8 @@ class IntegrationCell: UITableViewCell {
     @IBOutlet var _name: UILabel!
     @IBOutlet var _activeSwitch: UISwitch!
     
+    var integrationInteractor: ActivateIntegrationInteractorBase = ActivateFitbitInteractor()
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,8 +23,15 @@ class IntegrationCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         // Configure the view for the selected state
     }
 
+    @IBAction func integrationChanged(_ sender: Any) {
+        if _activeSwitch.isOn {
+            log.info("is on")
+            self.integrationInteractor.call(user_id: "")
+        } else {
+            log.info("is off")
+        }
+    }
 }

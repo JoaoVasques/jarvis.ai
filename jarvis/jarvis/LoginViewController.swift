@@ -20,8 +20,8 @@ class LoginViewController: UIViewController {
 
     // create an instance and retain it
     let oauthswift = OAuth1Swift(
-        consumerKey:    "",
-        consumerSecret: "",
+        consumerKey:    "amRhbsmGlaf8ZBvf88iyQya2O",
+        consumerSecret: "Alck3a8lW3dxmPNgyaVJ0nT2oR7X6W6Q33udXnD8qnXkvtO7Ly",
         requestTokenUrl: "https://api.twitter.com/oauth/request_token",
         authorizeUrl:    "https://api.twitter.com/oauth/authorize",
         accessTokenUrl:  "https://api.twitter.com/oauth/access_token"

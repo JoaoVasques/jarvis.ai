@@ -24,9 +24,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
-        if (url.host == "twitter") {
+        //if (url.host == "twitter") {
             OAuthSwift.handle(url: url)
-        }
+        //}
         return true
     }
 

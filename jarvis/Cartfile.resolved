@@ -1,6 +1,7 @@
 github "Alamofire/Alamofire" "4.2.0"
+github "BoltsFramework/Bolts-ObjC" "1.8.4"
 github "OAuthSwift/OAuthSwift" "1.1.1"
 github "antitypical/Result" "3.1.0"
 github "DaveWoodCom/XCGLogger" "Version_4.0.0"
-github "realm/realm-cocoa" "v2.1.0"
+github "realm/realm-cocoa" "v2.1.2"
 github "Thomvis/BrightFutures" "v5.1.0"
